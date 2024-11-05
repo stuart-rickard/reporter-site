@@ -1,0 +1,16 @@
+<input type="text" id="textInput" placeholder="Type here..." />
+
+<script>
+  // Load the typing sound
+  const typingSound = new Audio("typing-sound.mp3");
+
+  // Function to play sound
+  function playTypingSound() {
+    typingSound.currentTime = 0; // Reset sound to the start
+    typingSound.play();
+  }
+
+  // Add an event listener to the input field
+  const inputField = document.getElementById("textInput");
+  inputField.addEventListener("keypress", playTypingSound);
+</script>

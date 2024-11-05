@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="letter-r.png" type="image/x-icon" />
     <title>Reporter</title>
   </head>
   <body>
@@ -25,12 +26,17 @@
     <div id="chat-container">
       <div id="chat-box">
         <div class="instructions">
-          You are a New York City newspaper reporter in 1916 and your assignment is to cover developing events related to Pancho Villa, who is active in northern Mexico, Arizona, and New Mexico.
+          You are a New York City newspaper reporter in 1916 and your assignment is to cover developing events related to Pancho Villa, who is active in northern Mexico, Arizona, and New Mexico. You can take any action you like, but you only have 10 actions to complete your assignment. Good luck!
       </div>
     </div>
+    <div id="input-container">
       <input type="text" id="chat-input" placeholder="Type your action..." />
       <button id="send-button">Send</button>
-      <button id="take-photo-button">Take Photo</button>
-    <script src="script.js"></script>
-  </body>
+      <button id="take-photo-button">Photo</button>
+    </div>
+      <script src="helpers/initialize-assistants.js"></script>
+      <script src="helpers/handle-take-photo.js"></script>
+      <script src="helpers/handle-chat-input.js"></script>
+      <script src="script.js"></script>
+    </body>
 </html>
