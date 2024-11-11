@@ -4,7 +4,7 @@ async function handleTakePhoto() {
   var newImage = document.createElement("img");
   newImage.classList.add("bw-photo");
   newImage.classList.add("reduced-size");
-  newImage.src = "images/developing.webp";
+  newImage.src = "images/developing.png";
   chatBox.appendChild(newImage);
 
   try {
