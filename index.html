@@ -20,6 +20,23 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="letter-r.png" type="image/x-icon" />
     <title>Reporter</title>
+<!-- jhkjh -->
+
+    <style>
+      #chat {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        overflow-y: auto;
+        white-space: pre-wrap; /* Preserve line breaks */
+      }
+      #input {
+        width: 500px;
+      }
+    </style>
+<!-- jhkjh -->
+
   </head>
   <body>
     <div id="title">Reporter</div>
@@ -30,13 +47,15 @@
       </div>
     </div>
     <div id="input-container">
-      <input type="text" id="chat-input" placeholder="Type your action..." />
+<input type="text" id="chat-input" placeholder="Type your action..." />
       <button id="send-button">Send</button>
-      <button id="take-photo-button">Photo</button>
+      <button id="take-photo-button" class="not-ready" disabled>Photo</button>
     </div>
       <script src="helpers/initialize-assistants.js"></script>
       <script src="helpers/handle-take-photo.js"></script>
       <script src="helpers/handle-chat-input.js"></script>
+      <script src="helpers/toggle-photo-button.js"></script>
+      <script src="stream-test.js"></script>
       <script src="script.js"></script>
     </body>
 </html>

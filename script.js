@@ -2,6 +2,7 @@ const urlPrefix = "http://localhost:3000"; // for local testing
 // const urlPrefix = "https://q72.site/api"; // for remote testing
 
 let gameID = null;
+let readyToTakePhoto = false;
 
 initializeAssistants(); // also sets gameID
 

@@ -67,17 +67,30 @@ p {
   border-radius: 10px;
 }
 
+#send-button:hover {
+  background-color: #45a049;
+}
+
 #take-photo-button {
   padding: 10px;
-  background-color: #414141;
   color: white;
   border: none;
   border-radius: 10px;
   margin-left: 10px;
 }
 
-#send-button:hover {
-  background-color: #45a049;
+.not-ready {
+  background-color: #ffffff;
+  cursor: auto;
+}
+
+.ready {
+  background-color: #414141;
+  cursor: pointer;
+}
+
+.ready:hover {
+  background-color: #1a1a1a;
 }
 
 .instructions,
@@ -103,6 +116,7 @@ p {
 .response {
   margin-top: 12px;
   border-radius: 10px;
+  min-height: 200px;
   background-color: #dbd7c6;
   font-family: "EB Garamond", serif;
   font-weight: 400;

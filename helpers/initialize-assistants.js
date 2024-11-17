@@ -30,6 +30,7 @@ async function initializeAssistants() {
       });
 
       var initPostResult = await initPostResponse.json();
+      togglePhotoButton();
       var initMessage = initPostResult.message;
       console.log(initMessage);
     } else {

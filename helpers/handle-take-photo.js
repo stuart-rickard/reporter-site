@@ -1,4 +1,6 @@
 async function handleTakePhoto() {
+  togglePhotoButton();
+
   var chatBox = document.getElementById("chat-box");
 
   var newImage = document.createElement("img");
@@ -27,6 +29,7 @@ async function handleTakePhoto() {
       newImage.src = "";
       //   newImage.classList.remove("reduced-size");
       newImage.src = photoMessage;
+      togglePhotoButton();
     } else {
       newImage.src = "images/try-again.webp";
       setTimeout(function () {
